@@ -24,7 +24,7 @@ class HelloWorld extends atoum
     public function testGetHiAtoum ()
     {
         // création d’une nouvelle instance de la classe à tester
-        $helloToTest = new \Vendor\Project\HelloWorld();
+        $helloToTest = new HelloWorld();
  
         $this
             // nous testons que la méthode getHiAtoum retourne bien
@@ -36,4 +36,3 @@ class HelloWorld extends atoum
         ;
     }
 }
-?>
