@@ -2,9 +2,9 @@
 
 namespace tests\units;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once '/../../vendor/autoload.php';
 
-include __DIR__ . '/../../classes/recette.php';
+include '/../../classes/recette.php';
 
 use \mageekguy\atoum;
 use \recette;
