@@ -1,16 +1,18 @@
 <?php
 
-namespace vendor\project\tests\units;
+namespace tests\units;
 
-require_once __DIR__ . '/../mageekguy.atoum.phar';
+require_once __DIR__ .'/../../atoum.phar';
+require_once __DIR__ . '/../../HelloWorld.php';
 
-use \mageekguy\atoum;
-use \vendor\project;
+use \vendor\atoum\bin;
+//use \vendor\project;
 
 class helloWorld extends atoum\test
 {
     public function testSay()
     {
+        var_dump(__DIR__);
 
         // création d’une nouvelle instance de la classe à tester
         $helloToTest = new HelloWorld();
