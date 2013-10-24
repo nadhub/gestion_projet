@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/nadhub/gestion_projet.png)](http://travis-ci.org/nadhub/gestion_projet)
 gestion_projet
 ==============
 
