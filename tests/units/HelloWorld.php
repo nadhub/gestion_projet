@@ -8,10 +8,18 @@ require_once __DIR__ . '/../../HelloWorld.php';
 use \vendor\atoum\bin;
 //use \vendor\project;
 
-class helloWorld extends atoum\test
+require_once __DIR__ . '/../../vendor/autoload.php';
+
+include __DIR__ . '/../../classes/helloWorld.php';
+
+use \mageekguy\atoum;
+use \recette;
+
+class HelloWorld extends atoum\test
 {
     public function testSay()
     {
+
         var_dump(__DIR__);
 
         // création d’une nouvelle instance de la classe à tester
@@ -23,8 +31,12 @@ class helloWorld extends atoum\test
             ->string($helloToTest->getHiAtoum())
                 // ... et que la chaîne est bien celle attendue,
                 // c’est-à-dire 'Hi atoum !'
-                ->isEqualTo('Hi atoum !')
-        ;
+                ->isEqualTo('Hi atoum !');
+
+        $helloWorld = new \HelloWorld();
+
+        $this->string($helloWorld->getHiAtoum())->isEqualTo('Hello World!');
+
     }
 
 }

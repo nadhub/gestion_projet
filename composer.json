@@ -11,5 +11,8 @@
   }],
   "require-dev": {
       "atoum/atoum": "*@dev"
+  },
+  "config": {
+        "bin-dir": "bin"
   }
 }
