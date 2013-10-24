@@ -27,10 +27,5 @@ class helloWorld extends atoum\test
 
 }
 
-        $helloWorld = new project\helloWorld();
 
-        $this->string($helloWorld->say())->isEqualTo('Hello World!')
-        ;
-    }
-}
 
