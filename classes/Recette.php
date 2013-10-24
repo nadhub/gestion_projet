@@ -1,22 +1,19 @@
 <?php
 
-namespace tests\units;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
 
-include __DIR__ . '/../../classes/helloWorld.php';
-
-use \mageekguy\atoum;
-use \recette;
-
-class recetteTest extends atoum\test
+class Recette
 {
-    public function testGetName()
-    {
-        $recette = new \Recette();
+	protected $id;
+	protected $name;
 
-        
+    public function getName ()
+    {
+        return $this->name;
     }
 }
+
+
+
 
 
